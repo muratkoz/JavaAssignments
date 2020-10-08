@@ -168,12 +168,15 @@ public class Assignment5 {
 
               			1
 */
-		
 		for (int w = 4; w > 0; w--) {
-			System.out.println("\t");
-			for (int z = w; z > 0; z--) {
-				System.out.print("\t" + z + "\t");
+			
+			for (int tab = w; tab <4; tab++) {
+				System.out.print("\t");
 			}
+			for (int z = w; z > 0; z--) {
+				System.out.print(z + "\t\t");
+			}
+			System.out.println();
 		}
 
 		
@@ -204,7 +207,7 @@ public class Assignment5 {
 		
 		System.out.println("\n\nQUESTION 13"); // (NOT FINISHED)
 		/*
-		 * Print following chessboard using nested for loops.
+		 * Print following chess board using nested for loops.
 		W B W B W B W B
 		B W B W B W B W
 		W B W B W B W B
@@ -219,16 +222,19 @@ public class Assignment5 {
 		2. "W" and "B" are in alternate positions (row-wise or column-wise), 
 		you will not find consecutive W or B.
 		 */
-		for (int er = 1; er <= 8; er++) {
-			for (int mr = 1; mr <= 8; mr++) {
-				if (er % 2 != 0 || mr % 2 == 0) {
-					System.out.print("W");
+		for(int roww=1; roww<=8; roww++) {
+			for(int columnn=1; columnn<=8; columnn++) {
+				if(roww%2!=0 && columnn%2!=0) {
+					System.out.print("W ");
+					if(roww%2!=0 && columnn%2==0) {
+						System.out.print("B ");
+					}
+					}else if(roww%2==0 && columnn%2==0) {
+						System.out.print("W ");
+				}else {
+					System.out.print("B ");
 				}
-				if (er % 2 == 0 || mr % 2 != 0) {
-					System.out.print("B");
-				}
-			}
-			System.out.println();
+			}System.out.println();
 		}
 
 		

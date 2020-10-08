@@ -68,8 +68,16 @@ public class Assignment5 {
 
 		/*
 		 * Print the table of 12 using for loop. Output should be in following format:
-		 * 12 X 1 = 12 12 X 2 = 24 12 X 3 = 36 12 X 4 = 48 12 X 5 = 60 12 X 6 = 72 12 X
-		 * 7 = 84 12 X 8 = 96 12 X 9 = 108 12 X 10 = 120
+		 12 X 1 = 12 
+		 12 X 2 = 24 
+		 12 X 3 = 36 
+		 12 X 4 = 48 
+		 12 X 5 = 60 
+		 12 X 6 = 72 
+		 12 X 7 = 84 
+		 12 X 8 = 96 
+		 12 X 9 = 108 
+		 12 X 10 = 120
 		 */
 
 		for (int q = 1; q <= 10; q++) {
@@ -78,8 +86,8 @@ public class Assignment5 {
 
 		System.out.println("\n\nQUESTION 6");
 		/*
-		 * Write a program to print Fibonacci series of n terms where n is declared by
-		 * user : 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,......
+		 * Write a program to print Fibonacci series of n terms where n is declared by user :
+		 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,......
 		 */
 		System.out.println("How many fibonacci numbers will you print?");
 		int n = scan.nextInt();
@@ -144,8 +152,14 @@ public class Assignment5 {
 
 		System.out.println("\n\nQUESTION 10");
 		/*
-		 * Print following output using nested for loops: (Not finished!!!) 1 22 333
-		 * 4444 55555 666666 7777777
+		 * Print following output using nested for loops: 
+		 1
+		 22
+		 333
+		 4444
+		 55555
+		 666666
+		 7777777
 		 */
 
 		int row = 7;
@@ -156,7 +170,7 @@ public class Assignment5 {
 			System.out.println();
 		}
 
-		System.out.println("\n\nQUESTION 11"); // (NOT FINISHED)
+		System.out.println("\n\nQUESTION 11");
 
 		/*Print the following output using nested for loops. 
 
@@ -205,7 +219,7 @@ public class Assignment5 {
 		
 		
 		
-		System.out.println("\n\nQUESTION 13"); // (NOT FINISHED)
+		System.out.println("\n\nQUESTION 13");
 		/*
 		 * Print following chess board using nested for loops.
 		W B W B W B W B

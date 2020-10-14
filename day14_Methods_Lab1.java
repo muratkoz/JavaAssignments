@@ -29,23 +29,21 @@ public class day14_Methods_Lab1 {
 	public static void caughtSpeeding(int speed, boolean birthday) {
 		// TODO Auto-generated method stub
 		System.out.println("\nQuestion 5");
-		if(birthday==false) {
+		if(birthday) {
+			if(speed<=65){
+				System.out.println(0);
+			}else if(speed>65 && speed<=85) {
+				System.out.println(1);
+			}else if(speed>85) {
+				System.out.println(2);
+			}
+		}else {
 			if(speed<=60){
 				System.out.println(0);
 			}else if(speed>60 && speed<=80) {
 				System.out.println(1);
 			}else if(speed>80) {
 				System.out.println(2);
-			}
-		}else {
-			if(birthday==true) {
-				if(speed<=65){
-					System.out.println(0);
-				}else if(speed>65 && speed<=85) {
-					System.out.println(1);
-				}else if(speed>85) {
-					System.out.println(2);
-				}
 			}
 		}
 		
@@ -54,14 +52,14 @@ public class day14_Methods_Lab1 {
 	public static void deerPlay(int degree, boolean isSummer) {
 		System.out.println("\nQuestion 4");
 		// TODO Auto-generated method stub
-		if(isSummer==true){
+		if(isSummer){
 			if(degree>=60 && degree<=100) { 
 			System.out.println(true);
 			}
 			else {
 				System.out.println(false);
 			}
-		}else if(isSummer==false){
+		}else{
 			if (degree>=60 && degree<=90) {
 				System.out.println(true);
 			}else {

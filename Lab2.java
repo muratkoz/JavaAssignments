@@ -21,18 +21,38 @@ public class Lab2 {
 		 * display the largest and smallest numbers entered.
 		 */
 		Scanner scan = new Scanner(System.in);
+		int smallestNum=0;
+		int biggestNum=0;
 		System.out.println("Enter your first number:");
 		int firstNumber = scan.nextInt();
+		System.out.println("Enter your next number:");
+		int secondNumber = scan.nextInt();
+		if(firstNumber>secondNumber) {
+			biggestNum=firstNumber;
+			smallestNum=secondNumber;
+		}else {
+			smallestNum=firstNumber;
+			biggestNum=secondNumber;
+		}
 		int anotherNumber;
-		do {
-			System.out.println("Enter your next number:");
-			int secondNumber = scan.nextInt();
-			System.out.print("Do you want to enter another number: 0-No, 1-Yes");
-			anotherNumber = scan.nextInt();
-			if (anotherNumber == 0) {
-				System.out.println("I don't know what to write here");
-			}
-		} while (anotherNumber == 1);
+		System.out.print("Do you want to enter another number: 0-No, 1-Yes");
+		anotherNumber = scan.nextInt();
+		if(anotherNumber==0) {
+			System.out.println("Smallest number is: "+smallestNum+"\nBiggest number is: "+biggestNum);
+		}
+		 while (anotherNumber == 1) {
+			 System.out.println("Enter your next number:");
+				int nextNumber = scan.nextInt();
+			 if(nextNumber<smallestNum) {
+				 smallestNum=nextNumber;				 
+			 }else if(nextNumber>biggestNum){
+				 biggestNum=nextNumber;
+			 }
+			 System.out.print("Do you want to enter another number: 0-No, 1-Yes");
+			 anotherNumber = scan.nextInt();
+		 }
+		 
+		 System.out.println("Smallest number is: "+smallestNum+"\nBiggest number is: "+biggestNum);
 
 	}
 
